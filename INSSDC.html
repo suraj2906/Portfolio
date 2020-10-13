@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="pages.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://rawcdn.githack.com/albburtsev/jquery.typist/f4f429fad5bab374b1cf01da52ce4e469758afe6/dist/jquery.typist.min.js"></script>
+    <script src="Homepage.js"></script>
+    <title>INSSDC</title>
+</head>
+<body>
+    <hr>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Suraj Shah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href='index.html'>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href='INSSDC.html'>My Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='Hobbies.html'>Extra Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='ContactMe.html'>Contact Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Text Size
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="#" onclick="textsizesmall()">Small</a>
+                <a class="dropdown-item" href="#" onclick="textsizemedium()">Medium</a>
+                <a class="dropdown-item" href="#"  onclick="textsizelarge()">Large</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <hr>
+    <div style = "padding-top: 5px;">
+        <article>
+            <h1>International Space Settlement Design Competition</h1>
+            <p>
+                In 2017 I joined a space settlement design competition from my school. There were 12 of us, 
+                divided in groups of 3, each assigned a specific aspect of the spaceship. I was opted to go into 
+                structural design. There were many hurdles in the way, from coming up with the design to figuring 
+                out the specifics. What I learned from the quarter final round apart from the various materials
+                that can be used for various applications in a space settlement and the specific of G forces was 
+                communication and teamwork. At one point I was down with a fever but conveying the values was more
+                impportant to me as time was less, my teammates, being the understanding people they were, handled 
+                the situation that day without me being present there, and I did what I could lying in bed, doing 
+                calculations and conveying the same to my team  
+            </p>
+        </article>
+
+        <article>
+            <h1>The Semi-Final</h1>
+            <p>
+                We cleared the inter-school level of the competition and were selected for the National level.
+                We had to go to Delhi for this leg of the competition and everyone was really excited cause apart
+                from competing on the National level, there was one other thing all of us knew. We were gonna have
+                fun. The competion itself was gonna last 3 days. the 1st day was to get aquainted with the place -
+                Om Shanti Retreat Centre. It was amazingly calm and peaceful at all times. I even saw a peacock,
+                wandering about freely.
+                <br>
+                <br>
+                The second day and night were all about the competition. A team consisted of four different schools
+                grouped together, and there were four such teams. We had 24 hours to design a space settlement according 
+                to the Statement
+            </p> 
+        </article>
+    </div>
+    <!-- Full-width images with number and caption text -->
+    <div class="slide-container">
+        <div class="slides">
+            <div class="slide hidden">
+                <div class="numbertext">1/4</div>
+                <img src="group.jpg" alt="My School Team" />
+                <div class="text" style="color: darkslategray;">My School Team</div>
+                </div>
+                <div class="slide hidden">
+                  <div class="numbertext">2/5</div>
+                  <img src="plans.jpg" alt="Working Plans"/>
+                  <div class="text">Working Plans</div>
+              </div>
+                <div class="slide hidden">
+                    <div class="numbertext">3/5</div>
+                    <img src="trophy.jpg" alt="Trophy"/>
+                    <div class="text">The Trophy</div>
+                </div>
+                <div class="slide hidden">
+                    <div class="numbertext">4/5</div>
+                    <img src="runner.up.jpg" alt="Recieving the Trophy"/>
+                    <div class="text">Receiving the Trophy</div>
+                </div>    
+                <div class="slide hidden">
+                    <div class="numbertext">5/5</div>
+                    <img src="peacock.jpg" alt="And the random peacock" />
+                    <div class="text">And the random peacock</div>
+                </div>
+                      
+    <!--us  Next and previobuttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>   
+                        
+        </div>
+
+    <!-- The dots/circles -->
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+    </div>
+    <br>
+</body>
+</html>
